@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Aluno" representedClassName="Aluno" syncable="YES" codeGenerationType="class">
+        <attribute name="codigo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ra" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senha" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ciclo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ciclo" inverseName="aluno" inverseEntity="Ciclo" syncable="YES"/>
+    </entity>
+    <entity name="Aula" representedClassName="Aula" syncable="YES" codeGenerationType="class">
+        <attribute name="codigo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="objetivo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="avaliacao" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Avaliacao" inverseName="aula" inverseEntity="Avaliacao" syncable="YES"/>
+        <relationship name="disciplina" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Disciplina" inverseName="aula" inverseEntity="Disciplina" syncable="YES"/>
+    </entity>
+    <entity name="Avaliacao" representedClassName="Avaliacao" syncable="YES" codeGenerationType="class">
+        <attribute name="codigo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="valorAvaliacao" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="aula" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aula" inverseName="avaliacao" inverseEntity="Aula" syncable="YES"/>
+    </entity>
+    <entity name="Ciclo" representedClassName="Ciclo" syncable="YES" codeGenerationType="class">
+        <attribute name="codigo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="aluno" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aluno" inverseName="ciclo" inverseEntity="Aluno" syncable="YES"/>
+        <relationship name="disciplina" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Disciplina" inverseName="ciclo" inverseEntity="Disciplina" syncable="YES"/>
+    </entity>
+    <entity name="Curso" representedClassName="Curso" syncable="YES" codeGenerationType="class">
+        <attribute name="codigo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="disciplina" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Disciplina" inverseName="curso" inverseEntity="Disciplina" syncable="YES"/>
+    </entity>
+    <entity name="Disciplina" representedClassName="Disciplina" syncable="YES" codeGenerationType="class">
+        <attribute name="codigo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="aula" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Aula" inverseName="disciplina" inverseEntity="Aula" syncable="YES"/>
+        <relationship name="ciclo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ciclo" inverseName="disciplina" inverseEntity="Ciclo" syncable="YES"/>
+        <relationship name="curso" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Curso" inverseName="disciplina" inverseEntity="Curso" syncable="YES"/>
+        <relationship name="duvida" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Duvidas" inverseName="disciplina" inverseEntity="Duvidas" syncable="YES"/>
+        <relationship name="professor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Professor" inverseName="disciplina" inverseEntity="Professor" syncable="YES"/>
+    </entity>
+    <entity name="Duvidas" representedClassName="Duvidas" syncable="YES" codeGenerationType="class">
+        <attribute name="codigo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="duvida" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="disciplina" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Disciplina" inverseName="duvida" inverseEntity="Disciplina" syncable="YES"/>
+        <relationship name="resposta" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Respostas" inverseName="duvida" inverseEntity="Respostas" syncable="YES"/>
+    </entity>
+    <entity name="Professor" representedClassName="Professor" syncable="YES" codeGenerationType="class">
+        <attribute name="codigo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rf" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senha" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="disciplina" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Disciplina" inverseName="professor" inverseEntity="Disciplina" syncable="YES"/>
+    </entity>
+    <entity name="Respostas" representedClassName="Respostas" syncable="YES" codeGenerationType="class">
+        <attribute name="codigo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="resposta" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="duvida" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Duvidas" inverseName="resposta" inverseEntity="Duvidas" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Aluno" positionX="-414" positionY="-288" width="128" height="133"/>
+        <element name="Professor" positionX="-416" positionY="-135" width="128" height="133"/>
+        <element name="Ciclo" positionX="-225" positionY="-238" width="128" height="103"/>
+        <element name="Curso" positionX="-0" positionY="-153" width="128" height="90"/>
+        <element name="Disciplina" positionX="-216" positionY="-61" width="128" height="148"/>
+        <element name="Aula" positionX="-209" positionY="131" width="128" height="118"/>
+        <element name="Avaliacao" positionX="-207" positionY="281" width="128" height="88"/>
+        <element name="Duvidas" positionX="-414" positionY="54" width="128" height="103"/>
+        <element name="Respostas" positionX="-594" positionY="117" width="128" height="88"/>
+    </elements>
+</model>

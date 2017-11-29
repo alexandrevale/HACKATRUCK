@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -56,7 +57,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Esqueci minha senha"/>
                                 <connections>
-                                    <segue destination="FFr-24-kdI" kind="show" id="lnP-N8-UDW"/>
+                                    <segue destination="FFr-24-kdI" kind="presentation" id="0dr-1D-Yka"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWG-Uz-ssH">
@@ -96,25 +97,76 @@
         <!--EsqueciMinhaSenha-->
         <scene sceneID="P0D-7w-qAH">
             <objects>
-                <viewController id="FFr-24-kdI" userLabel="EsqueciMinhaSenha" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="BNU-eU-GDY"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ut7-Y5-v51"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Kda-lt-LdJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VaH-GU-aXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="FFr-24-kdI" userLabel="EsqueciMinhaSenha" customClass="EsqueciMinhaSenha" customModule="Facool" customModuleProvider="target" sceneMemberID="viewController">
+                    <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="zhJ-Ui-Ca1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="a7b-do-fjh">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1u-3P-i80" customClass="ModalView" customModule="Facool" customModuleProvider="target">
+                                    <rect key="frame" x="60" y="210" width="247" height="247"/>
+                                    <color key="backgroundColor" red="0.79991227389999997" green="0.80005055670000003" blue="0.79990351199999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="R1u-3P-i80" secondAttribute="height" multiplier="1:1" id="fP6-Tf-t5H"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sw1-We-5eP">
+                                    <rect key="frame" x="99.5" y="238" width="176" height="150"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Esqueceu sua senha?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6n-yP-UR0">
+                                            <rect key="frame" x="0.0" y="0.0" width="176" height="30"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Informe seu e-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prh-Le-XWL">
+                                            <rect key="frame" x="0.0" y="30" width="176" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sHL-Qa-ydc">
+                                            <rect key="frame" x="0.0" y="60" width="176" height="30"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyM-Ml-2aW">
+                                            <rect key="frame" x="0.0" y="90" width="176" height="30"/>
+                                            <state key="normal" title="Enviar"/>
+                                            <connections>
+                                                <action selector="btnEnviarSenha:" destination="FFr-24-kdI" eventType="touchUpInside" id="Pbw-zI-LhH"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62p-ee-9bd">
+                                            <rect key="frame" x="0.0" y="120" width="176" height="30"/>
+                                            <connections>
+                                                <action selector="btnEsqueciMinhaSenha:" destination="FFr-24-kdI" eventType="touchUpInside" id="qnm-1E-GEA"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="R1u-3P-i80" secondAttribute="bottom" constant="210" id="Do5-1U-6J9"/>
+                                <constraint firstItem="R1u-3P-i80" firstAttribute="top" secondItem="a7b-do-fjh" secondAttribute="top" constant="210" id="b1U-FO-4uJ"/>
+                                <constraint firstItem="R1u-3P-i80" firstAttribute="leading" secondItem="a7b-do-fjh" secondAttribute="leading" constant="60" id="tMB-tT-m1n"/>
+                                <constraint firstAttribute="trailing" secondItem="R1u-3P-i80" secondAttribute="trailing" constant="60" id="wXG-ko-LAd"/>
+                            </constraints>
+                        </view>
+                        <blurEffect style="light"/>
+                    </visualEffectView>
+                </viewController>
             </objects>
-            <point key="canvasLocation" x="650" y="922"/>
+            <point key="canvasLocation" x="648.79999999999995" y="921.58920539730138"/>
         </scene>
         <!--Ciclos-->
         <scene sceneID="wqI-Pp-v0c">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c3w-Mf-NWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="5cR-zK-dOa" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="otD-1o-Ecg"/>
@@ -155,6 +207,7 @@
                     <navigationItem key="navigationItem" title="Ciclos" id="kCS-Y8-yZq"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3w-Mf-NWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2868" y="6.746626686656672"/>
         </scene>
@@ -278,6 +331,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WT3-qG-UDJ">
+                                <rect key="frame" x="117" y="137" width="142" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -289,7 +346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hf0-pZ-HuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2868" y="-699"/>
+            <point key="canvasLocation" x="2868" y="-699.40029985007504"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bIT-3F-Wcm">

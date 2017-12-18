@@ -7,14 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2492D11FCF559D006AD00A /* CicloTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2492D01FCF559D006AD00A /* CicloTableViewCell.swift */; };
+		3F2492D31FCF5639006AD00A /* CiclosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2492D21FCF5639006AD00A /* CiclosDAO.swift */; };
+		3F2492D51FCF5644006AD00A /* Ciclos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2492D41FCF5644006AD00A /* Ciclos.swift */; };
+		3F2492D71FCF5E5F006AD00A /* CicloTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2492D61FCF5E5F006AD00A /* CicloTableViewController.swift */; };
+		3F2492DA1FCF6555006AD00A /* DisciplinasDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2492D91FCF6555006AD00A /* DisciplinasDAO.swift */; };
+		3F2492DC1FCF664F006AD00A /* Disciplinas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2492DB1FCF664F006AD00A /* Disciplinas.swift */; };
+		3F2492DE1FCF6691006AD00A /* DisciplinasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2492DD1FCF6691006AD00A /* DisciplinasTableViewController.swift */; };
+		3F2492E01FCF67E4006AD00A /* DisciplinasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2492DF1FCF67E4006AD00A /* DisciplinasTableViewCell.swift */; };
+		3F46107A1FD09EA600CF95A8 /* AulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4610791FD09EA600CF95A8 /* AulaViewController.swift */; };
+		3F46107C1FD0AF8000CF95A8 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F46107B1FD0AF8000CF95A8 /* PerfilViewController.swift */; };
+		3F46107E1FD0BED800CF95A8 /* EsqueciSenha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F46107D1FD0BED800CF95A8 /* EsqueciSenha.swift */; };
+		3FBA9FB41FCCCBFE00B9AADB /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBA9FB31FCCCBFE00B9AADB /* CadastroViewController.swift */; };
 		3FC35CFD1FC8CDDC004A25F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC35CFC1FC8CDDC004A25F9 /* AppDelegate.swift */; };
 		3FC35CFF1FC8CDDC004A25F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC35CFE1FC8CDDC004A25F9 /* ViewController.swift */; };
 		3FC35D021FC8CDDC004A25F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC35D001FC8CDDC004A25F9 /* Main.storyboard */; };
 		3FC35D041FC8CDDC004A25F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC35D031FC8CDDC004A25F9 /* Assets.xcassets */; };
 		3FC35D071FC8CDDC004A25F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC35D051FC8CDDC004A25F9 /* LaunchScreen.storyboard */; };
+		3FD60C171FCF7B31008070F5 /* AulasDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD60C161FCF7B31008070F5 /* AulasDAO.swift */; };
+		3FD60C191FCF7B3F008070F5 /* Aulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD60C181FCF7B3F008070F5 /* Aulas.swift */; };
+		3FD60C1B1FCF7C0C008070F5 /* AulasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD60C1A1FCF7C0C008070F5 /* AulasTableViewCell.swift */; };
+		3FD60C1F1FCF7C47008070F5 /* AulasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD60C1E1FCF7C47008070F5 /* AulasTableViewController.swift */; };
+		3FD60C211FCF7EEE008070F5 /* DesenvolvimentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD60C201FCF7EEE008070F5 /* DesenvolvimentoViewController.swift */; };
+		3FDB19791FCE008300C765AA /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB19781FCE008300C765AA /* DesignableView.swift */; };
+		3FDB19811FCE1A8100C765AA /* Facool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB197F1FCE1A8100C765AA /* Facool.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F2492D01FCF559D006AD00A /* CicloTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CicloTableViewCell.swift; sourceTree = "<group>"; };
+		3F2492D21FCF5639006AD00A /* CiclosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiclosDAO.swift; sourceTree = "<group>"; };
+		3F2492D41FCF5644006AD00A /* Ciclos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ciclos.swift; sourceTree = "<group>"; };
+		3F2492D61FCF5E5F006AD00A /* CicloTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CicloTableViewController.swift; sourceTree = "<group>"; };
+		3F2492D91FCF6555006AD00A /* DisciplinasDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisciplinasDAO.swift; sourceTree = "<group>"; };
+		3F2492DB1FCF664F006AD00A /* Disciplinas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disciplinas.swift; sourceTree = "<group>"; };
+		3F2492DD1FCF6691006AD00A /* DisciplinasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisciplinasTableViewController.swift; sourceTree = "<group>"; };
+		3F2492DF1FCF67E4006AD00A /* DisciplinasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisciplinasTableViewCell.swift; sourceTree = "<group>"; };
+		3F4610791FD09EA600CF95A8 /* AulaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AulaViewController.swift; sourceTree = "<group>"; };
+		3F46107B1FD0AF8000CF95A8 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		3F46107D1FD0BED800CF95A8 /* EsqueciSenha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EsqueciSenha.swift; sourceTree = "<group>"; };
+		3FBA9FB31FCCCBFE00B9AADB /* CadastroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		3FC35CF91FC8CDDC004A25F9 /* Facool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC35CFC1FC8CDDC004A25F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FC35CFE1FC8CDDC004A25F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +53,13 @@
 		3FC35D031FC8CDDC004A25F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FC35D061FC8CDDC004A25F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FC35D081FC8CDDC004A25F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD60C161FCF7B31008070F5 /* AulasDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AulasDAO.swift; sourceTree = "<group>"; };
+		3FD60C181FCF7B3F008070F5 /* Aulas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aulas.swift; sourceTree = "<group>"; };
+		3FD60C1A1FCF7C0C008070F5 /* AulasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AulasTableViewCell.swift; sourceTree = "<group>"; };
+		3FD60C1E1FCF7C47008070F5 /* AulasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AulasTableViewController.swift; sourceTree = "<group>"; };
+		3FD60C201FCF7EEE008070F5 /* DesenvolvimentoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesenvolvimentoViewController.swift; sourceTree = "<group>"; };
+		3FDB19781FCE008300C765AA /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		3FDB19801FCE1A8100C765AA /* Db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Db.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +73,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F2492D81FCF653E006AD00A /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				3F2492D21FCF5639006AD00A /* CiclosDAO.swift */,
+				3F2492D91FCF6555006AD00A /* DisciplinasDAO.swift */,
+				3FD60C161FCF7B31008070F5 /* AulasDAO.swift */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
 		3FC35CF01FC8CDDC004A25F9 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +133,18 @@
 			isa = PBXGroup;
 			children = (
 				3FC35CFE1FC8CDDC004A25F9 /* ViewController.swift */,
+				3FDB19781FCE008300C765AA /* DesignableView.swift */,
+				3FBA9FB31FCCCBFE00B9AADB /* CadastroViewController.swift */,
+				3F2492D61FCF5E5F006AD00A /* CicloTableViewController.swift */,
+				3F2492D01FCF559D006AD00A /* CicloTableViewCell.swift */,
+				3F2492DD1FCF6691006AD00A /* DisciplinasTableViewController.swift */,
+				3F2492DF1FCF67E4006AD00A /* DisciplinasTableViewCell.swift */,
+				3FD60C1A1FCF7C0C008070F5 /* AulasTableViewCell.swift */,
+				3FD60C1E1FCF7C47008070F5 /* AulasTableViewController.swift */,
+				3F4610791FD09EA600CF95A8 /* AulaViewController.swift */,
+				3FD60C201FCF7EEE008070F5 /* DesenvolvimentoViewController.swift */,
+				3F46107B1FD0AF8000CF95A8 /* PerfilViewController.swift */,
+				3F46107D1FD0BED800CF95A8 /* EsqueciSenha.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -92,6 +152,11 @@
 		3FC35D111FC8DBB5004A25F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3F2492D81FCF653E006AD00A /* DAO */,
+				3FDB197F1FCE1A8100C765AA /* Facool.xcdatamodeld */,
+				3F2492D41FCF5644006AD00A /* Ciclos.swift */,
+				3F2492DB1FCF664F006AD00A /* Disciplinas.swift */,
+				3FD60C181FCF7B3F008070F5 /* Aulas.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -168,8 +233,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2492D11FCF559D006AD00A /* CicloTableViewCell.swift in Sources */,
+				3FD60C211FCF7EEE008070F5 /* DesenvolvimentoViewController.swift in Sources */,
+				3F2492E01FCF67E4006AD00A /* DisciplinasTableViewCell.swift in Sources */,
+				3F46107E1FD0BED800CF95A8 /* EsqueciSenha.swift in Sources */,
+				3F2492DE1FCF6691006AD00A /* DisciplinasTableViewController.swift in Sources */,
+				3F46107A1FD09EA600CF95A8 /* AulaViewController.swift in Sources */,
+				3FD60C1B1FCF7C0C008070F5 /* AulasTableViewCell.swift in Sources */,
+				3FD60C1F1FCF7C47008070F5 /* AulasTableViewController.swift in Sources */,
+				3FDB19811FCE1A8100C765AA /* Facool.xcdatamodeld in Sources */,
+				3F2492D51FCF5644006AD00A /* Ciclos.swift in Sources */,
+				3F2492D71FCF5E5F006AD00A /* CicloTableViewController.swift in Sources */,
+				3FD60C171FCF7B31008070F5 /* AulasDAO.swift in Sources */,
+				3F46107C1FD0AF8000CF95A8 /* PerfilViewController.swift in Sources */,
+				3F2492DA1FCF6555006AD00A /* DisciplinasDAO.swift in Sources */,
 				3FC35CFF1FC8CDDC004A25F9 /* ViewController.swift in Sources */,
 				3FC35CFD1FC8CDDC004A25F9 /* AppDelegate.swift in Sources */,
+				3F2492D31FCF5639006AD00A /* CiclosDAO.swift in Sources */,
+				3FD60C191FCF7B3F008070F5 /* Aulas.swift in Sources */,
+				3FDB19791FCE008300C765AA /* DesignableView.swift in Sources */,
+				3FBA9FB41FCCCBFE00B9AADB /* CadastroViewController.swift in Sources */,
+				3F2492DC1FCF664F006AD00A /* Disciplinas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,8 +417,22 @@
 				3FC35D0D1FC8CDDC004A25F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FDB197F1FCE1A8100C765AA /* Facool.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FDB19801FCE1A8100C765AA /* Db.xcdatamodel */,
+			);
+			currentVersion = 3FDB19801FCE1A8100C765AA /* Db.xcdatamodel */;
+			path = Facool.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3FC35CF11FC8CDDC004A25F9 /* Project object */;
 }

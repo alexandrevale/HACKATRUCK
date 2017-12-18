@@ -1,5 +1,5 @@
 //
-//  EsqueciMinhaSenha.swift
+//  EsqueciSenha.swift
 //  Facool
 //
 //  Created by Student on 30/11/17.
@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-class EsqueciMinhaSenha: UIViewController {
+class EsqueciSenha: UIViewController {
+
     @IBAction func btnEsqueciSenha(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
     
     
     override func viewDidLoad() {
